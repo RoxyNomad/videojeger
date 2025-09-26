@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import "@/styles/globals.scss";
 import "@/styles/layout.scss";
+import Image from "next/image";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -10,7 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <h1></h1>
         </header>
         <main>
-          <img src="Videojeger Logo.svg" alt="Logo" className="logo" />
+          <Image src="Videojeger Logo.svg" alt="Logo" className="logo" />
           {children}
         </main>
         <footer>
